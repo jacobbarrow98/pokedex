@@ -8,7 +8,7 @@ class Pokedex extends React.Component {
       {
         id: 392,
         name: 'Infernape',
-        type: 'fire/fighting',
+        type: 'Fire/Fighting',
         base_experience: 209,
       },
       { id: 260, name: 'Swampert', type: 'Water/Ground', base_experience: 210 },
@@ -21,9 +21,17 @@ class Pokedex extends React.Component {
     ],
   };
   render() {
+    let title;
+    if (this.props.isWinner) {
+      title = <h1 className="Pokedex-winner">Congratulations! You Win!</h1>;
+    } else {
+      title = <h1 className="Pokedex-loser">Better luck next time, kid.</h1>;
+    }
     return (
       <div className="Pokedex">
         <h1>Pokedex</h1>
+        <h3>Total Experience: {this.props.exp}</h3>
+        {title}
         <div className="Pokedex-cards">
           {this.props.pokemon.map((p) => (
             <Pokecard

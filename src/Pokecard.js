@@ -9,13 +9,19 @@ class Pokecard extends React.Component {
     let imgSrc = `${POKE_API}${padToThree(this.props.id)}.png`;
     return (
       <div className="Pokecard">
-        <h3 className="Pokecard-title">{this.props.name}</h3>
+        <h3 className="Pokecard-title">
+          <a
+            href={`https://bulbapedia.bulbagarden.net/wiki/${this.props.name}_(Pok%C3%A9mon)`}
+          >
+            {this.props.name}
+          </a>
+        </h3>
         <img
           className="Pokecard-img"
           src={imgSrc}
           alt={this.props.name}
         />
-        <div className="Pokecard-data">Type: {this.props.type}</div>
+        <div className="Pokecard-type">Type: {this.props.type}</div>
         <div className="Pokecard-data">EXP: {this.props.exp}</div>
       </div>
     );

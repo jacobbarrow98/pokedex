@@ -7,3 +7,31 @@
 .Pokedex {
   text-align: center;
 }
+
+.Pokedex-winner {
+  color: limegreen;
+  text-decoration: underline;
+  animation-duration: 5s;
+  animation-name: fadeIn;
+}
+
+.Pokedex-loser {
+  color: red;
+  animation-duration: 5s;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
