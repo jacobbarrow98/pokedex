@@ -6,6 +6,8 @@
 
 .Pokedex {
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .Pokedex-winner {
@@ -17,6 +19,7 @@
 
 .Pokedex-loser {
   color: red;
+  text-decoration: underline;
   animation-duration: 5s;
   animation-name: fadeIn;
 }

@@ -29,7 +29,7 @@ class Pokedex extends React.Component {
     }
     return (
       <div className="Pokedex">
-        <h1>Pokedex</h1>
+        <h1>Challenger</h1>
         <h3>Total Experience: {this.props.exp}</h3>
         {title}
         <div className="Pokedex-cards">

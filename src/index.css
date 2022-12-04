@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #eceff1;
+  background-image: url('./gymBackground.jpeg');
+  background-position: center;
+  background-size: contain;
   color: #4d4d4d;
 }
 
